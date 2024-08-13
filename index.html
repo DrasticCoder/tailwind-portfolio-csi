@@ -1,47 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>My Portfolio</title>
-</head>
-<body class="bg-cover bg-[url('./assets/background.png')] h-[59rem] w-full">
+  </head>
+  <body class="bg-cover bg-[url('./assets/background.png')] h-[59rem] w-full">
     <nav class="hidden md:block p-3">
-        <ul class="flex items-center space-x-9 justify-center">
-            <li>
-                <img src="./assets/avatar.png" alt="Avatar" class="w-10 h-10 rounded-full">
-            </li>
-            <li><a href="#projects" class="hover:text-white">Projects</a></li>
-            <li><a href="#about" class="hover:text-white">About</a></li>
-            <li><a href="#skills" class="hover:text-white">Skills</a></li>
-            <li><a href="#contact" class="hover:text-white">Contact</a></li>
-        </ul>
+      <ul class="flex items-center space-x-9 justify-center">
+        <li>
+          <img
+            src="./assets/avatar.png"
+            alt="Avatar"
+            class="w-10 h-10 rounded-full"
+          />
+        </li>
+        <li><a href="#projects" class="hover:text-white">Projects</a></li>
+        <li><a href="#about" class="hover:text-white">About</a></li>
+        <li><a href="#skills" class="hover:text-white">Skills</a></li>
+        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+      </ul>
     </nav>
 
     <section>
-        <div class="p-4 md:p-0 mx-auto flex flex-col items-center mt-5 w-[100%] md:w-[40%]">
-            <div>
-                <img src="./assets/avatar-2.png" alt="avatar2" class="w-[12rem] h-[10rem]">
-            </div>
-            <div class="text-center mt-2">
-                <p class="text-[1.5rem] md:text-[2.5rem] text-[#242F65] font-semibold">Hi, I am Vedant Kale,</p>
-                <p class="text-[1.5rem] md:text-[2.5rem] text-[#242F65] font-semibold">Creative Technologist</p>
-            </div>
-            <div class="text-center mt-2">
-                <p class="text-center text-[#242F65] text-[1rem]">I am a seasoned full-stack software engineer with over 
-                    8 years of professional experience, specializing in backend development. 
-                    My expertise lies in crafting robust and scalable SaaS-based 
-                    architectures on the Amazon AWS platform.</p>
-            </div>
-            <div class="mt-3">
-                <button class="bg-[#242f65] text-white p-2 rounded-md">Get in touch</button>
-                <button class="p-2 text-[black]"><i class="fa-brands fa-github mr-1" style="color: #000000;"></i>Github</button>
-            </div>
+      <div
+        class="p-4 md:p-0 mx-auto flex flex-col items-center mt-5 w-[100%] md:w-[40%]"
+      >
+        <div>
+          <img
+            src="./assets/avatar-2.png"
+            alt="avatar2"
+            class="w-[12rem] h-[10rem]"
+          />
         </div>
+        <div class="text-center mt-2">
+          <p
+            class="text-[1.5rem] md:text-[2.5rem] text-[#242F65] font-semibold"
+          >
+            Hi, I am Vedant Kale,
+          </p>
+          <p
+            class="text-[1.5rem] md:text-[2.5rem] text-[#242F65] font-semibold"
+          >
+            Creative Technologist
+          </p>
+        </div>
+        <div class="text-center mt-2">
+          <p class="text-center text-[#242F65] text-[1rem]">
+            I am a seasoned full-stack software engineer with over 8 years of
+            professional experience, specializing in backend development. My
+            expertise lies in crafting robust and scalable SaaS-based
+            architectures on the Amazon AWS platform.
+          </p>
+        </div>
+        <div class="mt-3">
+          <button class="bg-[#242f65] text-white p-2 rounded-md">
+            Get in touch
+          </button>
+          <button class="p-2 text-[black]">
+            <i class="fa-brands fa-github mr-1" style="color: #000000"></i
+            >Github
+          </button>
+        </div>
+      </div>
     </section>
-    
-</body>
+
+    <section>
+      <div class="container mx-auto px-4 py-8 max-w-5xl text-[#242F65]">
+        <div class="flex items-center justify-between mb-6">
+          <div class="h-[1px] flex-1 bg-black bg-opacity-30 md:block"></div>
+          <h2 class="text-lg mx-4">✋ ABOUT ME</h2>
+          <div class="h-[1px] flex-1 bg-black bg-opacity-30 md:block"></div>
+        </div>
+        <div
+          class="flex md:flex-row flex-col-reverse justify-between p-10 gap-10"
+        >
+          <div class="w-full pr-4">
+            <p class="mb-4">
+              <span class="font-bold">I'm a UX Designer.</span> Over the past
+              <span class="text-orange-500 font-bold">10+ years</span> I've
+              created well-crafted mobile and web apps by connecting business
+              goals with user needs
+            </p>
+            <p class="mb-4">
+              Currently
+              <span class="font-bold">Service and Interaction Designer @</span>
+              <a href="#" class="text-blue-500">Fraxos</a> office. Recently
+              graduated from UC Berkeley, focusing on Interaction Design &
+              Design Emerging Technology.
+            </p>
+            <p>
+              Formerly at Electronic Arts, Apple, Sea Group, Deutsche Bank and
+              JPMorgan Chase & Co.
+            </p>
+          </div>
+          <div class="self-center md:mt-0">
+            <div class="relative rounded-md">
+              <img
+                class="max-w-80 rounded-md"
+                src="assets/profile-picture.jpeg"
+                alt="Profile picture"
+              />
+              <div
+                class="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-lg"
+              >
+                <a href="#" class="block text-blue-500 text-center mt-2"
+                  >Resume ↗</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
