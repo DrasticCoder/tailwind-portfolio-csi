@@ -56,7 +56,7 @@
         </ul>
     </nav>
     <main class="">
-        <aside class="rotate-[-90deg] top-[40%] left-[100%] translate-y-[-50%] w-fit sticky ">
+        <aside class="rotate-[-90deg] top-[40%] left-[100%] translate-y-[-50%] w-fit hidden md:block z-50 sticky ">
             <div class="relative after:content-[''] flex gap-3 after:block after:w-full after:h-[1px] after:bg-slate-500 after:absolute after:top-[50%] after:right-[150px]">
                 <a href="http://facebook.com" class="flex items-center justify-center w-8 h-8 rounded-full border-2 border-slate-200 hover:bg-slate-200 backdrop-blur-md text-white" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-facebook-f text-[#242F65] md:text-sm"></i>
@@ -72,7 +72,7 @@
 
         <!-- Main Section -->
         <section>
-            <div class="p-4 md:p-0 mx-auto flex flex-col items-center mt-5 md:mt-12 w-[100%] md:w-[40%]">
+            <div class="p-4 md:p-0 mx-auto flex flex-col items-center mt-3 md:mt-3 w-[100%] md:w-[40%]">
                 <div>
                     <img src="./assets/avatar-2.png" alt="avatar2" class="w-[12rem] h-[10rem]" />
                 </div>
@@ -102,6 +102,56 @@
                 </div>
             </div>
         </section>
+
+        
+    <section>
+        <div class="container mx-auto mt-6 md:mt-8 px-4 py-8 max-w-5xl text-[#242F65]">
+          <div class="flex items-center justify-between mb-6">
+            <div class="h-[1px] flex-1 bg-black bg-opacity-30 md:block"></div>
+            <h2 class="text-lg mx-4 relative after:content-[''] after:block after:w-[30px] after:h-[1px] after:rotate-90 after:bg-gray-600 after:absolute after:top-[50%] after:left-[-30px] before:content-[''] before:block before:w-[30px] before:h-[1px] before:rotate-90 before:bg-gray-600 before:absolute before:top-[50%] before:right-[-30px]">✋ ABOUT ME</h2>
+            <div class="h-[1px] flex-1 bg-black bg-opacity-30 md:block"></div>
+          </div>
+          <div
+            class="flex md:flex-row flex-col-reverse justify-between p-10 gap-10"
+          >
+            <div class="w-full pr-4">
+              <p class="mb-4">
+                I'm a <span class="font-bold">  UX Designer.</span> Over the past
+                <span class="text-orange-500 font-bold">10+ years</span> I've
+                created well-crafted mobile and web apps by connecting business
+                goals with user needs
+              </p>
+              <p class="mb-4">
+                Currently
+                <span class="font-bold">Service and Interaction Designer @</span>
+                <a href="#" class="text-blue-500">Fraxos</a> office. Recently
+                graduated from UC Berkeley, focusing on Interaction Design &
+                Design Emerging Technology.
+              </p>
+              <p>
+                Formerly at Electronic Arts, Apple, Sea Group, Deutsche Bank and
+                JPMorgan Chase & Co.
+              </p>
+            </div>
+            <div class="self-center md:mt-0">
+              <div class="relative rounded-md">
+                <img
+                  class="max-w-80 rounded-md"
+                  src="assets/profile-picture.jpeg"
+                  alt="Profile picture"
+                />
+                <div
+                  class="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-lg"
+                >
+                  <a href="#" class="block text-blue-500 text-center mt-2"
+                    >Resume ↗</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script>
