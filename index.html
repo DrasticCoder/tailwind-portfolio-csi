@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -12,12 +13,14 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <title>My Portfolio</title>
   </head>
 
@@ -43,12 +46,34 @@
 
         <!-- Desktop Menu -->
         <ul class="hidden md:flex items-center space-x-9 justify-center">
-          <li><a href="#about" class="hover:text-[#a7f9eb ]">About</a></li>
-          <li><a href="#skills" class="hover:text-[#a7f9eb ]">Skills</a></li>
           <li>
-            <a href="#projects" class="hover:text-[#a7f9eb ]">Projects</a>
+            <a
+              href="#about"
+              class="p-2 rounded-md hover:bg-slate-200 hover:bg-opacity-50 duration-500"
+              >About</a
+            >
           </li>
-          <li><a href="#contact" class="hover:text-[#a7f9eb ]">Contact</a></li>
+          <li>
+            <a
+              href="#skills"
+              class="p-2 rounded-md hover:bg-slate-200 hover:bg-opacity-50 duration-500"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="p-2 rounded-md hover:bg-slate-200 hover:bg-opacity-50 duration-500"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="p-2 rounded-md hover:bg-slate-200 hover:bg-opacity-50 duration-500"
+              >Contact</a
+            >
+          </li>
         </ul>
         <div class="hidden md:block"></div>
       </div>
@@ -146,7 +171,9 @@
             </p>
           </div>
           <div class="mt-6 gap-3 flex">
-            <button class="bg-[#242f65] text-white py-2 px-3 rounded-md">
+            <button
+              class="bg-[#242f65] text-white py-2 px-3 rounded-md hover:bg-black duration-500"
+            >
               Get in touch
             </button>
             <button
@@ -161,7 +188,7 @@
       <div class="bg-white">
         <section>
           <div
-            class="container mx-auto px-4 py-8 max-w-5xl text-[#242F65] mt-8"
+            class="container mx-auto px-4 py-8 max-w-5xl text-[#242F65] mt-8 mb-10"
           >
             <div class="flex items-center justify-between">
               <div class="h-[1px] flex-1 bg-black bg-opacity-10 md:block"></div>
@@ -206,11 +233,12 @@
                     alt="Profile picture"
                   />
                   <div
-                    class="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-lg"
+                    class="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-lg hover:shadow-xl duration-500"
                   >
-                    <a href="#" class="block text-blue-500 text-center mt-2"
-                      >Resume ↗</a
-                    >
+                    <a href="#" class="text-blue-500 text-center mt-2"
+                      >Resume
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -219,7 +247,7 @@
         </section>
 
         <section id="skills">
-          <div class="container mx-auto px-4 max-w-5xl text-[#242F65]">
+          <div class="container mx-auto px-4 max-w-5xl text-[#242F65] mb-10">
             <div class="flex items-center justify-between mb-10 gap-0">
               <div class="h-[1px] flex-1 bg-black bg-opacity-10 md:block"></div>
               <h2
@@ -229,23 +257,35 @@
               </h2>
               <div class="h-[1px] flex-1 bg-black bg-opacity-10 md:block"></div>
             </div>
-            <div class="flex gap-x-4 flex-wrap">
+            <div class="flex gap-4 flex-wrap">
               <div
-                class="border-slate-950 border-2 border-opacity-10 px-4 py-2 rounded-md font-bold flex gap-2 items-center"
+                class="border-slate-950 border-2 border-opacity-10 px-4 py-2 rounded-md font-bold flex gap-2 items-center hover:border-opacity-50 duration-500"
               >
                 <i class="fa-brands fa-react"></i>ReactJS
               </div>
               <div
-                class="border-slate-950 border-2 border-opacity-10 px-4 py-2 rounded-md font-bold flex gap-2 items-center"
+                class="border-slate-950 border-2 border-opacity-10 px-4 py-2 rounded-md font-bold flex gap-2 items-center hover:border-opacity-50 duration-500"
               >
-                <i class="fa-brands fa-react"></i>ReactJS
+                <i class="fa-brands fa-html5"></i>HTML
+              </div>
+              <div
+                class="border-slate-950 border-2 border-opacity-10 px-4 py-2 rounded-md font-bold flex gap-2 items-center hover:border-opacity-50 duration-500"
+              >
+                <i class="fa-brands fa-css3-alt"></i>CSS
+              </div>
+              <div
+                class="border-slate-950 border-2 border-opacity-10 px-4 py-2 rounded-md font-bold flex gap-2 items-center hover:border-opacity-50 duration-500"
+              >
+                <i class="fa-brands fa-js"></i>JavaScript
               </div>
             </div>
           </div>
         </section>
 
         <section id="projects">
-          <div class="container mx-auto px-4 py-8 max-w-5xl text-[#242F65]">
+          <div
+            class="container mx-auto px-4 py-8 max-w-5xl text-[#242F65] mb-10"
+          >
             <div class="flex items-center justify-between mb-10 gap-0">
               <div class="h-[1px] flex-1 bg-black bg-opacity-10 md:block"></div>
               <h2
@@ -255,22 +295,22 @@
               </h2>
               <div class="h-[1px] flex-1 bg-black bg-opacity-10 md:block"></div>
             </div>
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap gap-4 justify-center md:justify-start">
               <div
-                class="max-w-xs bg-slate-200 p-6 rounded-2xl flex flex-col gap-y-4"
+                class="max-w-xs bg-slate-200 p-6 rounded-2xl flex flex-col gap-y-4 hover:bg-slate-300 duration-500"
               >
                 <img
                   class="max-w-md rounded-2xl w-full"
                   src="assets/profile-picture.jpeg"
                   alt=""
                 />
-                <h2 class="font-bold text-lg">
+                <h2 class="text-xl font-bold project-title">
                   Saas website for unique start-up brands
                 </h2>
                 <div class="py-2">
                   <a
                     href="#"
-                    class="bg-slate-950 p-4 text-slate-200 text-sm rounded-md"
+                    class="bg-slate-900 px-4 py-2 text-slate-100 text-sm rounded-md hover:bg-black duration-500"
                     >Preview
                     <i class="fa-solid fa-arrow-up-right-from-square"></i
                   ></a>
@@ -283,17 +323,30 @@
     </main>
     <footer id="contact">
       <div
-        class="flex justify-between flex-wrap gap-10 max-w-5xl mx-auto my-5 p-4"
+        class="flex justify-between flex-wrap gap-10 max-w-5xl mx-auto mt-5 p-4 items-center"
       >
         <div>
           <h1 class="text-2xl font-bold">Let's Connect</h1>
-          <p>+91 8356943220</p>
-          <p>ypratham21comp@student.mes.ac.in</p>
+          <br />
+          <p>+91 12345 67890</p>
+          <p>student22comp@student.mes.ac.in</p>
         </div>
         <div>
-          <a href="#" class="bg-slate-950 text-slate-200 px-4 py-2 rounded-md"
+          <a
+            href="#"
+            class="bg-slate-900 hover:bg-black duration-500 text-slate-100 px-4 py-2 rounded-md"
             >Download Resume</a
           >
+        </div>
+      </div>
+      <div
+        class="flex justify-between flex-wrap gap-10 max-w-5xl mx-auto p-4 items-center text-[#242F65]"
+      >
+        <div>
+          <p>Copyright <i class="fa-regular fa-copyright"></i> CSI-PCE</p>
+        </div>
+        <div>
+          <p>Made With Love <i class="fa-solid fa-heart"></i></p>
         </div>
       </div>
     </footer>
