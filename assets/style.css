@@ -1,0 +1,33 @@
+/* Default Light Mode Styles */
+:root {
+  --background-color: #ffffff;
+  --text-color: #242f65;
+  --navbar-background: rgba(255, 255, 255, 0.2);
+  --card-background: #f8f9fa;
+  --card-border: rgba(0, 0, 0, 0.1);
+}
+
+/* Apply the variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Navbar */
+nav {
+  background-color: var(--navbar-background);
+}
+
+/* Cards */
+.bg-slate-200 {
+  background-color: var(--card-background);
+}
+
+.border-slate-950 {
+  border-color: var(--card-border);
+}
+
+/* Other specific styles */
+.bg-color-1 {
+  background-color: var(--text-color);
+}
